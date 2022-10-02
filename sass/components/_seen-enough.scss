@@ -1,0 +1,59 @@
+.seen-enough {
+  background-color: #45525b;
+  text-align: center;
+}
+
+.container {
+}
+.seen-enoudh__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #fafafc;
+}
+
+.seen-enoudh__subtitle {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.19;
+  color: #ffffff;
+}
+
+.seen-enoudh__text {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.22;
+  color: #fafafc;
+}
+
+.seen-enoudh__button {
+}
+
+.seen-enoudh__btn-contact,
+.seen-enoudh__btn-listings {
+  background-color: #ffffff;
+  padding: 10px 18px;
+  border-radius: 4px;
+  border: transparent;
+
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: #45525b;
+
+  transition: background-color 300ms $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: rgb(235, 235, 235);
+  }
+}
+
+.seen-enoudh__btn-contact {
+  margin-right: 20px;
+}

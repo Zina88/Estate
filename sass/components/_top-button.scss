@@ -1,0 +1,36 @@
+.scrollToTopBtn {
+  opacity: 0;
+  cursor: pointer;
+  bottom: 50px;
+  right: 50px;
+  width: 40px;
+  height: 40px;
+  position: fixed;
+  z-index: 90;
+  transform: translateY(100px);
+  transition: all 500ms $transition;
+
+  background-color: rgba(250, 235, 215, 0.106);
+  border-radius: 50%;
+  border: 1px solid $accent-color;
+  padding: 5px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  &:hover {
+    transform: translateY(-20px);
+    filter: hue-rotate(220deg);
+  }
+}
+
+.showBtn {
+  opacity: 0.8;
+  transform: translateY(0);
+}
+
+.upp-button {
+  fill: $accent-color;
+  transition: fill 300ms $transition;
+}

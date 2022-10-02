@@ -1,0 +1,102 @@
+.modalOurPeopleOverlay {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.25);
+  backdrop-filter: saturate(180%) blur(10px);
+  opacity: 1;
+  z-index: 300;
+  padding: 20px;
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+  overflow: hidden;
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+  }
+}
+
+.modalPurPeopleWrap {
+  flex-shrink: 0;
+  flex-grow: 0;
+  width: 100%;
+  min-height: 100%;
+  margin: auto;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalOurPeoplebox {
+  position: relative;
+  display: flex;
+  width: 580px;
+  max-width: 100%;
+  min-height: 358px;
+  padding: 50px 50px;
+  border-radius: 4px;
+
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  margin: auto;
+
+  background-color: white;
+  overflow-y: auto;
+  // transform: scale(1);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 1px rgba(0, 0, 0, 0.3),
+    0px 2px 1px rgba(0, 0, 0, 0.3);
+
+  .is-hidden & {
+    transform: scale(0.9);
+  }
+}
+
+.modalOurPeopleClose {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background-color: transparent;
+  color: #ccc;
+  border-color: #ccc;
+  transition: color 300ms $transition, border-color 300ms $transition;
+
+  &:hover,
+  &:focus,
+  &:active {
+    border-color: $accent-color;
+    color: $accent-color;
+  }
+}
+
+.modal-people__avatar {
+  width: 100px;
+  height: 100px;
+  margin-right: 8px;
+  margin-bottom: 10px;
+  transition: scale 300ms $transition;
+
+  &:hover,
+  &:focus {
+    scale: 1.07;
+  }
+}

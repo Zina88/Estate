@@ -1,0 +1,63 @@
+.our-goal__section {
+  background-color: #fafafc;
+}
+
+.our-goal {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.our-goal__first-container {
+  padding: 55px 0;
+}
+.our-goal__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.our-goal__subtitle {
+  font-size: 48px;
+  line-height: 1.1;
+  color: $title-text-color;
+}
+//.......................................
+.our-goal__paragraph {
+  font-size: 16px;
+  line-height: 1.38;
+  color: $primary-text-color;
+  margin-bottom: 8px;
+
+  &:nth-child(2) {
+    margin-bottom: 19px;
+  }
+}
+
+.our-goal__avatar {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.our-goal__avatar-img {
+  margin-right: 8px;
+  width: 80px;
+  height: 80px;
+}
+
+.our-goal__avatar-name {
+  font-size: 16px;
+  line-height: 1.38;
+  color: $title-text-color;
+}
+
+.our-goal__avatar-prof {
+  font-size: 12px;
+  line-height: 1.42;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+
+  color: $subtitle-text-color;
+}

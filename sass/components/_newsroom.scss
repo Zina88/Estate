@@ -1,0 +1,113 @@
+.newsroom {
+  background-color: #fafafc;
+  text-align: center;
+}
+
+.newsroom__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  text-align: center;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.newsroom__subtitle {
+  margin-bottom: 23px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.19;
+  text-align: center;
+  color: $title-text-color;
+}
+
+.newsroom__gallery {
+  margin-bottom: 20px;
+}
+
+.newsroom__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -20px;
+}
+
+.newsroom__item {
+  width: calc(100% / 3 - 20px);
+  margin-left: 20px;
+  background-color: #fff;
+  border-radius: 0 5px;
+  transition: box-shadow 300ms $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.newsroom__box {
+  padding: 30px;
+  text-align: start;
+}
+
+.newsroom__box-title {
+  margin-bottom: 8px;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.42;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.newsroom__box__subtitle {
+  margin-bottom: 10px;
+  height: 40px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.19;
+  color: $title-text-color;
+}
+
+.newsroom__box-data {
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 1.54;
+  color: $subtitle-text-color;
+}
+.newsroom__view {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.newsroom__view-text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: currentColor;
+  margin-right: 4px;
+}
+
+.newsroom__view-icon {
+  fill: currentColor;
+}
+
+.newsroomBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  padding: 5px;
+  color: $title-text-color;
+
+  transition: all 300ms $transition;
+
+  &:hover,
+  &:active {
+    color: $accent-color;
+    transform: translateX(1px);
+    filter: hue-rotate(220deg);
+  }
+}

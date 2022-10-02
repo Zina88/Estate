@@ -1,0 +1,117 @@
+.people__container {
+  display: flex;
+}
+.people-title__container {
+  width: 370px;
+  margin-right: 64px;
+}
+
+.people__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+.people__subtitle {
+  margin-bottom: 13px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.19;
+  color: $title-text-color;
+}
+.people__paragraph {
+  margin-bottom: 19px;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 1.29;
+  color: $subtitle-text-color;
+}
+
+.people__view {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.view__text {
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: $title-text-color;
+}
+//..........................................
+.people {
+  width: 736px;
+}
+
+.people__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-bottom: -16px;
+}
+
+.people__item {
+  width: calc(100% / 2 - 16px);
+  margin-left: 16px;
+  margin-bottom: 16px;
+
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.people__avatar {
+  width: 80px;
+  height: 80px;
+  margin-right: 8px;
+  transition: scale 300ms $transition;
+
+  &:hover,
+  &:focus {
+    scale: 1.07;
+  }
+}
+
+.people__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.38;
+  color: $title-text-color;
+}
+.people__profesion {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.42;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $subtitle-text-color;
+}
+
+.view__text {
+  color: currentColor;
+}
+.view__icon {
+  fill: currentColor;
+}
+
+.button-our-people {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  padding: 5px;
+  color: $title-text-color;
+
+  transition: all 300ms $transition;
+
+  &:hover,
+  &:active {
+    color: $accent-color;
+    transform: translateX(1px);
+    filter: hue-rotate(220deg);
+  }
+}

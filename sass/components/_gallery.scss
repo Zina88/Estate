@@ -1,0 +1,128 @@
+.gallery {
+  background-color: #fafafc;
+}
+
+.gallery__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.gallery__subtitle {
+  margin-bottom: 13px;
+  font-size: 36px;
+  line-height: 1.19;
+  color: $title-text-color;
+}
+
+.gallery__paragraph {
+  margin-bottom: 30px;
+  width: 600px;
+  font-size: 18px;
+  line-height: 1.22;
+  color: $subtitle-text-color;
+}
+
+.gallery__container {
+  margin-bottom: 26px;
+}
+
+.gallery__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -16px;
+  margin-top: -21px;
+}
+.gallery__item {
+  margin-left: 16px;
+  margin-top: 21px;
+  width: calc(100% / 3 - 16px);
+  background-color: #fff;
+  border-radius: 0 0 4px 4px;
+  transition: box-shadow 300ms $transition;
+
+  &:hover,
+  &:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
+}
+
+.gallery__box {
+  padding: 22px 16px;
+  text-align: center;
+}
+
+.box-subtitle {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 1.41;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $subtitle-text-color;
+}
+
+.box-title {
+  margin-bottom: 10px;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.4;
+  color: $title-text-color;
+}
+
+.gallery__icon-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.gallery__icon-item {
+  display: flex;
+  margin-right: 16px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+.gallery__icon {
+  margin-right: 8px;
+}
+.arrow {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.arrow__text {
+  margin-right: 4px;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.4;
+  color: currentColor;
+}
+
+.arrow-right {
+  fill: currentColor;
+}
+
+.listingsBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: transparent;
+  background-color: transparent;
+  padding: 5px;
+  color: $title-text-color;
+
+  transition: all 300ms $transition;
+
+  &:hover,
+  &:active {
+    color: $accent-color;
+    transform: translateX(1px);
+    filter: hue-rotate(220deg);
+  }
+}

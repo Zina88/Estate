@@ -1,0 +1,129 @@
+.testimonials__title {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.43;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: $accent-color;
+}
+
+.testimonials__subtitle {
+  margin-bottom: 20px;
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 1.19;
+  color: $title-text-color;
+}
+
+.slaider {
+  width: 1200px;
+  overflow: hidden;
+  padding: 5px;
+  margin: 0;
+}
+
+.testimonials__list {
+  margin-bottom: 80px;
+  width: 3050px;
+  display: flex;
+  position: relative;
+  left: 0;
+
+  transition: all ease 1s;
+}
+
+.testimonials__item {
+  width: 544px;
+  height: 226px;
+  outline: 1px solid #ccc;
+  padding: 20px;
+  margin-right: 20px;
+
+  &:last-child {
+    margin-right: 0;
+  }
+}
+
+.testimonials__star {
+  margin-bottom: 7px;
+}
+.testimonials__theme {
+  margin-bottom: 11px;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.21;
+  color: $primary-text-color;
+}
+
+.testimonials__text {
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 1.47;
+  color: $primary-text-color;
+}
+
+.testimonials__name {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1;
+  color: $title-text-color;
+
+  &::before {
+    display: block;
+    position: relative;
+    content: '';
+    bottom: -20px;
+    left: -10px;
+    background-color: $accent-color;
+    width: 2px;
+    height: 24px;
+  }
+}
+
+.testimonials__button-container {
+  position: relative;
+}
+
+.testimonials__button {
+  position: absolute;
+  bottom: 0;
+  right: 30px;
+}
+
+.testimonials__forward {
+  border-radius: 50%;
+  padding: 15px;
+  border: 2px solid #52503b;
+  color: #52503b;
+  background-color: transparent;
+  transition: all 300ms $transition, border-color 300ms $transition;
+
+  &:hover,
+  &:active {
+    color: $accent-color;
+    border-color: $accent-color;
+    transform: translateX(2px);
+    filter: hue-rotate(220deg);
+  }
+}
+
+.testimonials__back {
+  border-radius: 50%;
+  padding: 15px;
+  border: 2px solid #52503b;
+  color: #52503b;
+  background-color: transparent;
+  transition: all 300ms $transition, border-color 300ms $transition;
+
+  &:hover,
+  &:active {
+    color: $accent-color;
+    border-color: $accent-color;
+    transform: translateX(-2px);
+    filter: hue-rotate(220deg);
+  }
+}
+
+.testimonials__icon {
+  fill: currentColor;
+}
