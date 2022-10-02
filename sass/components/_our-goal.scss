@@ -45,6 +45,12 @@
   margin-right: 8px;
   width: 80px;
   height: 80px;
+  transition: scale 300ms $transition;
+
+  &:hover,
+  &:focus {
+    scale: 1.07;
+  }
 }
 
 .our-goal__avatar-name {
