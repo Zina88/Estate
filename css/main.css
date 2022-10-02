@@ -138,14 +138,14 @@ button {
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  background-image: -webkit-gradient(linear, left top, right top, from(rgba(250, 250, 252, 0.78)), to(rgba(250, 250, 252, 0.78))), url("/picture/HeroBackground.jpg");
-  background-image: linear-gradient(to right, rgba(250, 250, 252, 0.78), rgba(250, 250, 252, 0.78)), url("/picture/HeroBackground.jpg");
+  background-image: -webkit-gradient(linear, left top, right top, from(rgba(250, 250, 252, 0.78)), to(rgba(250, 250, 252, 0.78))), url("../picture/HeroBackground.jpg");
+  background-image: linear-gradient(to right, rgba(250, 250, 252, 0.78), rgba(250, 250, 252, 0.78)), url("../picture/HeroBackground.jpg");
 }
 
 @media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
   .hero {
-    background-image: -webkit-gradient(linear, left top, right top, from(rgba(250, 250, 252, 0.78)), to(rgba(250, 250, 252, 0.78))), url("/picture/HeroBackground@2x.jpg");
-    background-image: linear-gradient(to right, rgba(250, 250, 252, 0.78), rgba(250, 250, 252, 0.78)), url("/picture/HeroBackground@2x.jpg");
+    background-image: -webkit-gradient(linear, left top, right top, from(rgba(250, 250, 252, 0.78)), to(rgba(250, 250, 252, 0.78))), url("../picture/HeroBackground@2x.jpg");
+    background-image: linear-gradient(to right, rgba(250, 250, 252, 0.78), rgba(250, 250, 252, 0.78)), url("../picture/HeroBackground@2x.jpg");
   }
 }
 

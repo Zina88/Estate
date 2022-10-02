@@ -13,7 +13,7 @@
       rgba(250, 250, 252, 0.78),
       rgba(250, 250, 252, 0.78)
     ),
-    url('/picture/HeroBackground.jpg');
+    url('../picture/HeroBackground.jpg');
 
   @media (min-device-pixel-ratio: 2),
     (min-resolution: 192dpi),
@@ -23,7 +23,7 @@
         rgba(250, 250, 252, 0.78),
         rgba(250, 250, 252, 0.78)
       ),
-      url('/picture/HeroBackground@2x.jpg');
+      url('../picture/HeroBackground@2x.jpg');
   }
 }
 
